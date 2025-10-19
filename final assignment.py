@@ -5,12 +5,14 @@ import matplotlib.pyplot as plt
 # Title for the display
 st.title(" Final Assignment Kapil Bahndari")
 st.write("Data Analytics and Mathematics KA00EH66-3006")
+url1 ="https://github.com/Bhandka/Final-Assignment/blob/main/Electricity_consumption_2015-2025.csv"
+url2 = "https://github.com/Bhandka/Final-Assignment/blob/main/Electricity_price_2015-2025.csv"
 
 # Load data from csv files
 @st.cache_data
 def load_data():
-    df_cons = pd.read_csv("Electricity_consumption_2015-2025.csv")
-    df_price = pd.read_csv("Electricity_price_2015-2025.csv", delimiter=';', decimal=',') # both data doesnot follow same format
+    df_cons = pd.read_csv(url1)
+    df_price = pd.read_csv(url2, delimiter=';', decimal=',') # both data doesnot follow same format
     return df_cons, df_price
 
 df_cons, df_price = load_data()
@@ -227,4 +229,5 @@ st.write(f"• **Data completeness:** All {len(df_filtered)} hours have complete
 st.write("---")
 st.write("Thank you for the Real world Example project")
 st.write("I was thinking of going inner join but remembered our earlier email and went with average price for missing values")
+
 
