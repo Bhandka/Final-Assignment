@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 st.title(" Final Assignment Kapil Bahndari")
 st.write("Data Analytics and Mathematics KA00EH66-3006")
 url1 = "https://raw.githubusercontent.com/Bhandka/Final-Assignment/refs/heads/main/Electricity_consumption_2015-2025.csv"
-url2 = "https://github.com/Bhandka/Final-Assignment/raw/main/Electricity_price_2015-2025.csv"
+url2 = "https://raw.githubusercontent.com/Bhandka/Final-Assignment/refs/heads/main/Electricity_price_2015-2025.csv"
 
 # Load data from csv files
 @st.cache_data
@@ -229,6 +229,7 @@ st.write(f"• **Data completeness:** All {len(df_filtered)} hours have complete
 st.write("---")
 st.write("Thank you for the Real world Example project")
 st.write("I was thinking of going inner join but remembered our earlier email and went with average price for missing values")
+
 
 
 
