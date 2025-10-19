@@ -222,13 +222,10 @@ st.write(f"• **Date range:** {df_filtered['datetime'].min().date()} to {df_fil
 st.write(f"• **Missing prices handled:** {missing_prices} records filled with average price")
 st.write(f"• **Data completeness:** All {len(df_filtered)} hours have complete consumption and price data")
 
-# After your hourly patterns chart, add this:
-
-
-
 st.write("---")
 st.write("Thank you for the Real world Example project")
 st.write("I was thinking of going inner join but remembered our earlier email and went with average price for missing values")
+
 
 
 
